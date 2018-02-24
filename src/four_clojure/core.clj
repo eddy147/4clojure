@@ -1,5 +1,5 @@
 (ns four-clojure.core
-  (:gen-class))
+    (:gen-class))
 
 (defn my-nth
     "http://www.4clojure.com/problem/21"
@@ -43,10 +43,7 @@
             sum
             (recur (rest xs) (+ sum (first xs))))))
 
-
-
-
 (defn -main
-  "See above for the individual solutions"
-  [& args]
-  (println "See core.clj for the 4clojure solutions."))
+    "See above for the individual solutions"
+    [& args]
+    (println "See core.clj for the 4clojure solutions."))
