@@ -7,3 +7,8 @@
 
 (deftest test-my-reverse
     (is (= (my-reverse [1 2 3 4 5]) [5 4 3 2 1])))
+
+(= (my-sum (list 0 -2 5 5)) 8)
+
+(deftest test-my-sum
+    (is (= (my-sum (list 0 -2 5 5)) 8)))

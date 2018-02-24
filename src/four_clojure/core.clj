@@ -33,6 +33,19 @@
             ys
             (recur (rest xs) (conj ys (first xs))))))
 
+(defn my-sum
+    "http://www.4clojure.com/problem/24"
+    [xs]
+    (loop
+        [xs xs
+         sum 0]
+        (if (empty? xs)
+            sum
+            (recur (rest xs) (+ sum (first xs))))))
+
+
+
+
 (defn -main
   "See above for the individual solutions"
   [& args]
