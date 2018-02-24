@@ -23,6 +23,15 @@
             k
             (recur (rest ys) (inc k)))))
 
+(defn my-reverse
+    "http://www.4clojure.com/problem/23"
+    [xs]
+    (loop
+        [xs xs
+         ys ()]
+        (if (empty? xs)
+            ys
+            (recur (rest xs) (conj ys (first xs))))))
 
 (defn -main
   "See above for the individual solutions"
